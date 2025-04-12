@@ -12,7 +12,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 		if(ckeywhitelist)
 			customitem = TRUE
 
-/datum/loadout_item/proc/donator_ckey_check(key)
+/datum/loadout_item/proc/custom_ckey_check(key)
 	if(ckeywhitelist && ckeywhitelist.Find(key))
 		return TRUE
 	return
